@@ -54,7 +54,7 @@ app.use('/', (req, res) => {
 
 
 // Start the server
-// app.listen(Port, () => {
-//     console.log(`Server is Runnninng`);
-// })
+app.listen(Port, () => {
+    console.log(`Server is Runnninng`);
+})
 module.exports = app;
