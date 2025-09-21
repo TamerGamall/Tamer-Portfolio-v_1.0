@@ -2,12 +2,15 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Portofolio Backend",
-  "main": "server.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon index.js",
     "test": "jest",
-    "start": "node server.js"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "keywords": [],
   "author": "Tamer Gamal",
