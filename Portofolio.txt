@@ -1,0 +1,110 @@
+We Have 6 Models 
+1 => User
+2 => Project
+3 => siteContent
+4 => Visit 
+5 =>Education
+6=> Experince
+
+
+----------User Controllers--------
+----------->END Points
+----------->http://localhost:3000/api/user/signup  =====POST
+----------->http://localhost:3000/api/user/login    =====POST
+
+----------Visit Controllers--------
+first we made visit model it have ipAddress , user agent , page 
+then middlaware to track visit 
+----------->END Points
+----------->http://localhost:3000/api/analytics/daily-visits =====GET
+----------->http://localhost:3000/api/analytics/page-status =====GET
+----------->http://localhost:3000/api/analytics/total-visits =====GET
+
+----------Education Controllers--------
+----------->END Points
+http://localhost:3000/api/educations
+
+
+----------Experince Controllers--------
+----------->END Points
+http://localhost:3000/api/services
+
+----------Experince Controllers--------
+----------->END Points
+http://localhost:3000/api/experiences
+
+----------Project Controllers--------
+
+----------->END Points
+----------->http://localhost:3000/api/projects  =====GET
+----------->http://localhost:3000/api/projects  =====POST
+----------->http://localhost:3000/api/projects/ID  =====PUT
+----------->http://localhost:3000/api/projects/ID  =====Delete
+
+
+
+----------------------------------------------
+        ---------user signUp-------
+{
+  "username" : "Tamer",
+  "email" : "Tamer@gmail.com",
+  "password" : "12345678"
+}
+        ---------create Project-------
+{
+  "title" : "Portofoliossss",
+  "description" : "This is portofolio u can buy and use it as u want",
+  "technologies" : ["node.js","angular"]
+}
+        ---------Site Content-------
+{
+  "heroSection": {
+    "title": "مرحبا، أنا تامر",
+    "subtitle": "Full-Stack Developer",
+    "heroImage": "uploads/hero.jpg",
+    "backgroundImage": "uploads/bg.jpg"
+  },
+  "aboutSection": {
+    "aboutMe": "أنا مطور ويب شغوف ببناء تطبيقات حديثة وسريعة.",
+    "profileImage": "uploads/profile.jpg",
+    "skills": ["JavaScript", "React", "Node.js", "MongoDB"]
+  },
+  "contactSection": {
+    "email": "tamer@example.com",
+    "phone": "+20123456789",
+    "address": "القاهرة، مصر",
+    "socialLinks": {
+      "github": "https://github.com/tamer",
+      "linkedin": "https://linkedin.com/in/tamer",
+      "twitter": "https://twitter.com/tamer",
+      "facebook": "https://facebook.com/tamer",
+      "instagram": "https://instagram.com/tamer"
+    }
+  },
+  "siteSettings": {
+    "logo": "uploads/logo.png",
+    "favicon": "uploads/favicon.ico",
+    "footerText": "© 2025 تامر جمال - جميع الحقوق محفوظة"
+  }
+}
+------------------------------------------------
+{
+  "degree": "Bachelor of Computer Science",
+  "university": "Cairo University",
+  "fieldOfStudy": "Software Engineering",
+  "grade": "3.12",
+  "startDate": "2019-09-01",
+  "endDate": "2023-06-30",
+  "description": "Studied programming, data structures, and web development."
+}
+---------------------------------
+{
+  "title": "Full Stack Developer",
+  "company": "Tech Solutions",
+  "location": "Cairo, Egypt",
+  "Projects": ["Portfolio" , "Youtube-clone","E-comerce"],
+  "startDate": "2023-01-01",
+  "endDate": "2025-02-03",
+  "responsibilities": "Developing web applications using Angular and Node.js."
+}
+
